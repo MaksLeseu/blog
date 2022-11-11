@@ -1,0 +1,30 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы,контейнер для других важных данных(не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Project</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/authorization.css">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<!-- Отображаемое тело страницы -->
+    <body>
+        <div class="wrapper">
+            <section class="authorization">
+                <h1>Вход</h1>
+                <form class="authorization__form" action="">
+                    <input class="authorization__input" placeholder="Логин" type="text">
+                    <input class="authorization__input" placeholder="Пароль" type="password">
+                    <button class="authorization__btn">Войти</button>
+                </form>
+                <form action="">
+                    <button class="authorization__btn-two authorization__btn-two_a">восстановить</button>
+                    <button class="authorization__btn-two authorization__btn-two_b">регистрация</button>
+                </form>
+            </section>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
