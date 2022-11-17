@@ -37,7 +37,7 @@
 							<li class="sidebar__link sidebar__link-menu">Статьи<span class="sidebar__link-span"></span>
 								<ul class="sidebar__menu">
 									<li><a href="block.html" class="sidebar__menu_link">Создание сайтов</a></li>
-									<li><a href="" class="sidebar__menu_link">Интернет-маркетинг</a></li>
+									<li><a href="page.html" class="sidebar__menu_link">Результаты поиска</a></li>
 									<li><a href="" class="sidebar__menu_link sidebar__menu_link_a">Продвижение видео</a></li>
 								</ul>
 							</li>
@@ -65,7 +65,7 @@
 							<li class="header__link header__link_arrow">Статьи<span></span>
 								<ul class="header__list-menu">
 									<li><a href="block.html" class="header__link-menu">Создание сайтов</a></li>
-									<li><a href="" class="header__link-menu">Интернет-маркетинг</a></li>
+									<li><a href="page.html" class="header__link-menu">Результаты поиска</a></li>
 									<li><a href="" class="header__link-menu">Продвижение видео</a></li>
 								</ul>
 							</li>
@@ -84,11 +84,9 @@
 						<div class="block__conteiner">
 							<div class="block__top">
 								<div class="top__tag">
-									<form action="">
-										<button class="top__tag-back top__tag-back_none">вернуться назад</button>
-									</form>
+									<a href="" class="top__tag-back top__tag-back_none">вернуться назад</a>
 									<form class="top__tag-back_form" action="">
-										<button class="top__tag-back">поделиться</button>
+										<button class="top__tag-back" type="submit">поделиться</button>
 										<button class="top__tag-back_share"><img src="./img/block/share 1.svg" alt=""></button>
 									</form>
 								</div>
@@ -101,60 +99,48 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
 								<div class="top__image">
 									<img src="./img/block/content-image.png" alt="">
-								</div>
-								<p class="top__text_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+								</div>	
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
 							</div>
 							<div class="block__bottom">
 								<h2>Интересно почитать</h2>
-								<div class="bottom__row">
-									<ul class="bottom__list bottom__list_a">
-										<li><a class="bottom__link" href="">Как я сходил на FrontEnd Conf 2021<span>21.06.2020</span></a></li>
-									</ul>
-									<ul class="bottom__list bottom__list_b">
-										<li><a class="bottom__link" href="">Как писать код быстро и  ...<span>21.06.2020</span></a></li>
-									</ul>
-									<ul class="bottom__list bottom__list_c">
-										<li><a class="bottom__link" href="">Купил новый ноутбук за 150 000 руб<span>21.06.2020</span></a></li>
-									</ul>
-									<ul class="bottom__list bottom__list_d">
-										<li><a class="bottom__link" href="">Купил новый ноутбук за 150 000 руб<span>21.06.2020</span></a></li>
-									</ul>
-								</div>
-								<h2 class="bottom__h2">Обсуждение</h2>
+								<ul class="bottom__row">
+									<li class="bottom__list bottom__list_a"><a class="bottom__link" href="">Как я сходил на FrontEnd Conf 2021<span>21.06.2020</span></a></li>
+									<li class="bottom__list bottom__list_b"><a class="bottom__link" href="">Как писать код быстро и  ...<span>21.06.2020</span></a></li>
+									<li class="bottom__list bottom__list_c"><a class="bottom__link" href="">Купил новый ноутбук за 150 000 руб<span>21.06.2020</span></a></li>
+									<li class="bottom__list bottom__list_d"><a class="bottom__link" href="">Купил новый ноутбук за 150 000 руб<span>21.06.2020</span></a></li>
+								</ul>
+								<h2>Обсуждение</h2>
 								<form action="">
 									<input type="text" class="bottom__input" placeholder="Текст комментария">
 									<button class="bottom__btn">Отправить</button>
 								</form>
-								<div class="bottom__coments">
-									<div class="bottom__coments-row">
-										<div class="bottom__icon">
-											<img src="./img/block/1icon-comment.svg" alt="">
-										</div>
-										<div class="bottom__name">
-											<span>Дмитрий Валак</span>
-											<span>1 неделю назад</span>
-										</div>
+								<div class="bottom__coments-row">
+									<div class="bottom__icon">
+										<img src="./img/block/1icon-comment.svg" alt="">
 									</div>
-									<p>Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-									<form action="">
-										<button class="bottom__reply">ответить</button>
-									</form>
-								</div>
-								<div class="bottom__coments bottom__coments_b">
-									<div class="bottom__coments-row">
-										<div class="bottom__icon">
-											<img src="./img/block/2icon-comment.svg" alt="">
-										</div>
-										<div class="bottom__name">
-											<span>Джонни</span>
-											<span>1 неделю назад</span>
-										</div>
+									<div class="bottom__name">
+										<span>Дмитрий Валак</span>
+										<span>1 неделю назад</span>
 									</div>
-									<p>Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-									<form action="">
-										<button class="bottom__reply">ответить</button>
-									</form>
 								</div>
+								<p>Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+								<form action="">
+									<button class="bottom__reply bottom__reply_a">ответить</button>
+								</form>
+								<div class="bottom__coments-row bottom__coments-row_b">
+									<div class="bottom__icon">
+										<img src="./img/block/2icon-comment.svg" alt="">
+									</div>
+									<div class="bottom__name">
+										<span>Джонни</span>
+										<span>1 неделю назад</span>
+									</div>
+								</div>
+								<p class="bottom__text">Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+								<form class="bottom__form" action="">
+									<button class="bottom__reply">ответить</button>
+								</form>
 							</div>
 						</div>
 					</section>
