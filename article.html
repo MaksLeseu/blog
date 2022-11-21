@@ -4,11 +4,12 @@
 <html lang="ru">
 	<!-- Заголовок страницы,контейнер для других важных данных(не отображается) -->
 	<head>
+		<!-- Заголовок страницы в браузере -->
 		<title>Blog</title>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="stylesheet" href="css/authorization.css">
-        <!-- Для старых сайтов -->
+		<link rel="stylesheet" href="css/article.css">
+		<!-- Для старых сайтов -->
 		<link rel="icon" type="image/png" href="./img/favicon/favicon-boxing.ico" sizes="32x32" type="image/x-icon">
 		<!-- Для современных сайтов -->
 		<link rel="icon" href="./img/favicon/favicon-boxing.svg">
@@ -58,13 +59,13 @@
 						<p class="sidebar__bottom-text">Front-end разработчик. Практик верстки сайтов. Созданием сайтов занимаюсь с 2022 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.</p>
 						<ul class="sidebar__bottom-btn">
 							<li><a href="page2.html" class="sidebar__bottom-buttom sidebar__bottom-buttom_a">Мои работы</a></li>
-							<li><a href="" class="sidebar__bottom-buttom sidebar__bottom-buttom_b">Написать мне</a></li>
+							<li><a href="index.html" class="sidebar__bottom-buttom sidebar__bottom-buttom_b">Написать мне</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-            <div class="content">
-                <header class="header">
+			<div class="content">
+				<header class="header">
 					<div class="header__burger">
 						<span></span>
 					</div>
@@ -88,21 +89,46 @@
 						</form>
 					</nav>
 				</header>
-                <div class="container">
-                    <section class="authorization">
-                        <h1>Вход</h1>
-                        <form class="authorization__form" action="#">
-                            <input class="authorization__input" placeholder="Логин" type="text">
-                            <input class="authorization__input" placeholder="Пароль" type="password">
-                            <button class="authorization__btn">Войти</button>
-                        </form>
-                        <form action="#">
-                            <button class="authorization__btn-two authorization__btn-two_a">восстановить</button>
-                            <a class="authorization__btn-two authorization__btn-two_b" href="profile.html">регистрация</a>
-                        </form>
-                    </section>
-                </div>
-            </div>
+				<div class="container">
+					<section class="block">
+						<div class="block__conteiner">
+							<div class="block__top">
+								<div class="top__tag">
+									<a href="index.html" class="top__tag-back top__tag-back_none">вернуться назад</a>
+									<form class="top__tag-back_form" action="#">
+										<button class="top__tag-back" type="submit">поделиться</button>
+										<button class="top__tag-back_share"><img src="./img/article/share1.svg" alt=""></button>
+									</form>
+								</div>
+								<h1>Базовая боксёрская комбинация.</h1>
+								<div class="top__span">
+									<span>16.11.2022</span>
+									<span> базовые боксерские упражнения</span>
+								</div>
+								<p>После освоения одиночных ударов и ваших первых простых комбинаций, вам захочется включать в комбинации нижние и боковые удары, но как сделать это гармонично? Как научиться бить комбинации быстро и гладко, так, что бы противнику казалось, что его засыпают бесконечным количеством ударов и этому нет конца? Начать обучения этому стоит с базовой боксёрской комбинации - это фундамент на который положатся все ваши будущие комбинации.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+								<div class="top__image">
+									<img src="./img/article/photo1.jpg" alt="">
+								</div>	
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+								<div class="top__video">
+									<iframe  src="https://www.youtube.com/embed/c4972BatI6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+							<div class="block__bottom">
+								<h2>Интересно почитать</h2>
+								<ul class="bottom__row">
+									<li class="bottom__list bottom__list_a"><a class="bottom__link" href="">Как я сходил на FrontEnd Conf 2021<span>21.06.2020</span></a></li>
+									<li class="bottom__list bottom__list_b"><a class="bottom__link" href="">Бой с тенью ...<span>29.06.2022</span></a></li>
+									<li class="bottom__list bottom__list_c"><a class="bottom__link" href="">Акцент - теннисный мячик.<span>16.11.2022</span></a></li>
+									<li class="bottom__list bottom__list_d"><a class="bottom__link" href="">Купил новый ноутбук за 150 000 руб<span>21.06.2020</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
         </div>
         <script src="js/script.js"></script>
+		<script src="js/fslightbox.js"></script>
     </body>

@@ -37,8 +37,10 @@
 						</div>
 					</div>
 					<ul class="sidebar__list">
+							<li><a href="index.html" class="sidebar__link">Главное</a></li>
 							<li class="sidebar__link sidebar__link-menu">Статьи<span class="sidebar__link-span"></span>
 								<ul class="sidebar__menu">
+									<li><a href="article.html" class="sidebar__menu_link">Базовая боксёрская комбинация</a></li>
 									<li><a href="block.html" class="sidebar__menu_link">Создание сайтов</a></li>
 									<li><a href="page.html" class="sidebar__menu_link">Результаты поиска</a></li>
 									<li><a href="" class="sidebar__menu_link sidebar__menu_link_a">Продвижение видео</a></li>
@@ -46,7 +48,7 @@
 							</li>
 							<li><a href="" class="sidebar__link">Обо мне</a></li>
 							<li><a href="" class="sidebar__link">Реклама</a></li>	
-							<li><a href="" class="sidebar__link">Профиль</a></li>
+							<li><a href="authorization.html" class="sidebar__link">Профиль</a></li>
 						</ul>
 					<div class="sidebar__bottom">
 						<p class="sidebar__bottom-text">Front-end разработчик. Практик верстки сайтов. Созданием сайтов занимаюсь с 2022 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.</p>
@@ -64,20 +66,21 @@
 					</div>
 					<nav class="header__menu">
 						<ul class="header__list">
-							<li><a href="index.html" class="header__link">Главная</a></li>
-							<li class="header__link header__link_arrow">Статьи<span></span>
+							<li class="header__link-shell"><a href="index.html" class="header__link">Главная</a></li>
+							<li class="header__link header__link_arrow header__link-shell">Статьи<span></span>
 								<ul class="header__list-menu">
+									<li><a href="article.html" class="header__link-menu">Базовая боксёрская комбинация</a></li>
 									<li><a href="block.html" class="header__link-menu">Создание сайтов</a></li>
 									<li><a href="page.html" class="header__link-menu">Результаты поиска</a></li>
-									<li><a href="" class="header__link-menu">Продвижение видео</a></li>
+									<li><a href="" class="header__link-menu">Продвижение видео</a></li> 
 								</ul>
 							</li>
-							<li><a href="" class="header__link">Обо мне</a></li>
-							<li><a href="" class="header__link">Реклама</a></li>	
+							<li class="header__link-shell"><a href="" class="header__link">Обо мне</a></li>
+							<li class="header__link-shell"><a href="" class="header__link">Реклама</a></li>	
 							<li class="header__link-empty"></li>
-							<li><a href="authorization.html" class="header__link">Профиль</a></li>
+							<li class="header__link-shell"><a href="authorization.html" class="header__link">Профиль</a></li>
 						</ul>
-						<form action="">
+						<form action="#">
 							<input class="header__input" placeholder="Поиск по блогу" type="text">
 						</form>
 					</nav>
@@ -87,33 +90,33 @@
 						<div class="gallery__row">
 							<div class="gallery__image">
 								<a data-fslightbox="gallery" href="./img/index/gallery/1Gallery.jpg">
-									<img src="./img/index/gallery/1Gallery.jpg" alt=""></a>
-								<span>Отдыхаю на природе</span>
-								<span>15.09.2020</span>
+									<img src="./img/index/gallery/1Gallery.jpg" alt="">
+									<span>Отдыхаю на природе</span>
+									<span>15.09.2020</span></a>
 							</div>
 							<div class="gallery__image">
 								<a data-fslightbox="gallery" href="./img/index/gallery/2Gallery.jpg">
-									<img src="./img/index/gallery/2Gallery.jpg" alt=""></a>
+									<img src="./img/index/gallery/2Gallery.jpg" alt="">
 								<span>Чилю на берегу моря</span>
-								<span>15.09.2020</span>
+								<span>15.09.2020</span></a>
 							</div>
 							<div class="gallery__image gallery__image_a">
 								<a data-fslightbox="gallery" href="./img/index/gallery/3Gallery.jpg">
-									<img src="./img/index/gallery/3Gallery.jpg" alt=""></a>
+									<img src="./img/index/gallery/3Gallery.jpg" alt="">
 								<span>Переехал в новую галактику</span>
-								<span>11.09.2020</span>
+								<span>11.09.2020</span></a>
 							</div>
 							<div class="gallery__image gallery__image_b">
 								<a data-fslightbox="gallery" href="./img/index/gallery/4Gallery.jpg">
-									<img src="./img/index/gallery/4Gallery.jpg" alt=""></a>
+									<img src="./img/index/gallery/4Gallery.jpg" alt="">
 								<span>Античный воин</span>
-								<span>28.09.2020</span>
+								<span>28.09.2020</span></a>
 							</div>
 						</div>
 					</section>
 					<section class="input">
-						<form class="input__form" action="">
-							<input type="text" name="" class="input__ip" placeholder="Напишите что-нибудь">
+						<form class="input__form" action="#">
+							<textarea class="input__text" name="text" placeholder="Написать на почту"></textarea>
 							<div class="input__photo">
 								<input type="file" name="photo" id="input__file" class="input__photo_a">
 								<label class="input__label" for="input__file"><img src="./img/index/content/icons/photo-btn.svg" alt=""></label>
@@ -121,123 +124,103 @@
 							<button class="input__button" type="submit"><img src="./img/index/content/icons/send-btn.svg" alt=""></button>
 						</form>
 					</section>
-					<section class="block-style block">
-						<div class="block-style__conteiner">
-							<p class="block-style__p_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-							<span class="block__span">21.06.2022</span>
+					<section class="block block1">
+						<div class="block__conteiner">
+							<p class="block__text_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+							<span class="block1__data">21.06.2022</span>
 						</div>
 					</section>
-					<section class="block-style block1">
-						<div class="block-style__image">
+					<section class="block">
+						<div class="block__image">
 							<img src="./img/index/content/1content-image.png" alt="">
 						</div>
-						<div class="block-style__conteiner">
-							<p class="block-style__p_a">Как писать код быстро и безболезненно?</p>
-							<p class="block-style__p_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-							<div class="block-style__bottom">
-								<div class="block-style__span">
+						<div class="block__conteiner">
+							<p class="block__text_a">Как писать код быстро и безболезненно?</p>
+							<p class="block__text_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+							<div class="block__bottom">
+								<div class="block__data">
 									<span>21.06.2020</span>
 									<span>создание сайтов</span>
 								</div>
-								<ul><li><a href="" class="block-style__read">читать</a></li></ul>
+								<a href="" class="block__read">читать</a>
 							</div>
 						</div>
 					</section>
-					<section class="block-style block2">
-						<div class="block2__image">
-							<a data-fslightbox="video1"  href="./video/Бой с тенью.mp4">
-								<video class="block2__video" src="./video/Бой с тенью.mp4" controls poster="./img/index/content/2content-image.jpg"></video>
+					<section class="block">
+						<div class="block__video">
+							<a data-fslightbox="video1"  href="./video/Бой-с-тенью.mp4">
+								<video src="./video/Бой-с-тенью.mp4" controls poster="./img/index/content/2content-image.jpg"></video>
 							</a>
 						</div>
-						<div class="block-style__conteiner">
-							<p class="block-style__p_a">Бой с тенью.</p>
-							<div class="block-style__bottom">
-								<div class="block-style__span">
+						<div class="block__conteiner">
+							<p class="block__text_a">Бой с тенью.</p>
+							<div class="block__bottom">
+								<div class="block__data">
 									<span>29.06.2022</span>
 									<span>продвижение видео</span>
 								</div>
-								<ul><li><a href="" class="block-style__read">оставить комментарий</a></li></ul>
+								<a href="" class="block__read">оставить комментарий</a>
 							</div>
 						</div>
 					</section>
-					<section class="block-style block3">
-							<div class="block-style__image">
+					<section class="block">
+							<div class="block__image">
 								<img src="./img/index/content/3content-image.png" alt="">
 							</div>
-							<div class="block-style__conteiner">
-								<p class="block-style__p_a">Как я сходил на FrontEnd Conf 2021</p>
-								<p class="block-style__p_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-								<div class="block-style__bottom">
-									<div class="block-style__span">
+							<div class="block__conteiner">
+								<p class="block__text_a">Как я сходил на FrontEnd Conf 2021</p>
+								<p class="block__text_b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+								<div class="block__bottom">
+									<div class="block__data">
 										<span>21.06.2020</span>
 										<span>создание сайтов</span>
 									</div>
-									<ul><li><a href="" class="block-style__read">читать</a></li></ul>
+									<a href="" class="block__read">читать</a>
 								</div>
 							</div>
 						
 					</section>
-					<section class="block-style block4">
-						<div class="block-style__image">
+					<section class="block">
+						<div class="block__image">
 							<img src="./img/index/content/4content-image.jpg" alt="">
 						</div>
-						<div class="block-style__conteiner">
-							<p class="block-style__p_a">Акцент - теннисный мячик.</p>
-							<p class="block-style__p_b">Акцент, теннисный мячик - ещё одно упражнение для акцента удара которое научит вас концентрировать энергию  и пробивать противника более плотными ударами.</p>
-							<div class="block-style__bottom">
-								<div class="block-style__span">
+						<div class="block__conteiner">
+							<p class="block__text_a">Акцент - теннисный мячик.</p>
+							<p class="block__text_b">Акцент, теннисный мячик - ещё одно упражнение для акцента удара которое научит вас концентрировать энергию  и пробивать противника более плотными ударами.</p>
+							<div class="block__bottom">
+								<div class="block__data">
 									<span>16.11.2022</span>
 									<span>акцент и жёсткость удара</span>
 								</div>
-								<ul><li><a href="" class="block-style__read">читать</a></li></ul>
+								<a href="" class="block__read">читать</a>
 							</div>
 						</div>
 					
 					</section>
-					<section class="block-style block5">
-						<div class="block-style__image">
+					<section class="block">
+						<div class="block__youtube">
 							<iframe  src="https://www.youtube.com/embed/c4972BatI6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-						<div class="block-style__conteiner">
-							<p class="block-style__p_a">Базовая боксёрская комбинация.</p>
-							<p class="block-style__p_b">После освоения одиночных ударов и ваших первых простых комбинаций, вам захочется включать в комбинации нижние и боковые удары, но как сделать это гармонично? Как научиться бить комбинации быстро и гладко, так, что бы противнику казалось, что его засыпают бесконечным количеством ударов и этому нет конца? Начать обучения этому стоит с базовой боксёрской комбинации - это фундамент на который положатся все ваши будущие комбинации.</p>
-							<div class="block-style__bottom">
-								<div class="block-style__span">
+						<div class="block__conteiner">
+							<p class="block__text_a">Базовая боксёрская комбинация.</p>
+							<p class="block__text_b">После освоения одиночных ударов и ваших первых простых комбинаций, вам захочется включать в комбинации нижние и боковые удары, но как сделать это гармонично? Как научиться бить комбинации быстро и гладко, так, что бы противнику казалось, что его засыпают бесконечным количеством ударов и этому нет конца?</p>
+							<div class="block__bottom">
+								<div class="block__data">
 									<span>16.11.2022</span>
 									<span>базовые боксерские упражнения</span>
 								</div>
-								<ul><li><a href="" class="block-style__read">читать</a></li></ul>
+								<a href="article.html" class="block__read">читать</a>
 							</div>
 						</div>
 					</section>
 				</div>
 				<footer class="footer">
 					<div class="footer__row">
-						<div class="footer__button">
-							<form action="">
-								<button class="footer__btn footer__btn_a"><span></span><span></span></button>
-							</form>
-						</div>
-						<div class="footer__button">
-							<form action="">
-								<button class="footer__btn footer__btn_b">1</button>
-							</form>
-						</div>
-						<div class="footer__button">
-							<form action="">
-								<button class="footer__btn footer__btn_c">2</button>
-							</form>
-						</div>
-						<div class="footer__button">
-							<form action="">
-								<button class="footer__btn footer__btn_d">3</button>
-							</form>
-						</div>
-						<div class="footer__button">
-							<form action="">
-								<button class="footer__btn footer__btn_e"><span></span><span></span></button>
-							</form>
-						</div>
+						<a href="" class="footer__btn footer__btn_a"><span></span><span></span></a>
+						<a href="" class="footer__btn footer__btn_b">1</a>
+						<a href="" class="footer__btn footer__btn_c">2</a>
+						<a href="" class="footer__btn footer__btn_d">3</a>
+						<a href="" class="footer__btn footer__btn_e"><span></span><span></span></a>
 					</div>
 				</footer>
 			</div>
