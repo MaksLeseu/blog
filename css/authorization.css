@@ -83,17 +83,17 @@ body._active-burger {
 
 .wrapper {
   display: flex;
+  height: 100%;
 }
 
 .content {
   background-color: #181818;
   width: 100%;
-  height: 730px;
 }
 
 .container {
   max-width: 630px;
-  margin: 60px auto 0px auto;
+  margin: 120px auto 0px auto;
   padding: 0px 15px;
 }
 .container._active-burger {
@@ -522,7 +522,6 @@ body._active-burger {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0 0 0;
 }
 .authorization h1 {
   font-style: normal;

@@ -83,6 +83,7 @@ body._active-burger {
 
 .wrapper {
   display: flex;
+  height: 100%;
 }
 
 .content {
@@ -93,7 +94,7 @@ body._active-burger {
 
 .container {
   max-width: 630px;
-  margin: 60px auto 300px auto;
+  margin: 120px auto 300px auto;
   padding: 0px 15px;
 }
 .container._active-burger {
@@ -519,7 +520,6 @@ body._active-burger {
 }
 
 .profile {
-  padding: 60px 0 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -593,4 +593,9 @@ body._active-burger {
 }
 .profile__input-file {
   display: none;
+}
+@media (max-width: 540px) {
+  .profile {
+    display: block;
+  }
 }/*# sourceMappingURL=profile.css.map */
