@@ -47,36 +47,15 @@ body{
         .block{
             margin-bottom: 20px;
         }
-        .block2{
-            padding: 0px;
-        }
         .block__conteiner{
             padding: 13px 15px 18px 15px;
         }
-        .block-style__conteiner{
-            padding: 13px 15px 18px 15px;
-        }
-        .block-style__image{
-            width: 290px;
-            height: 183px;
-            margin: 0px auto;
-        }
-        .block2__image{
-            width: 290px;
-            height: 205px;
-            margin: 0px auto;
-            img{
-                width: 290px;
-                height: 205px;
-                padding: 0;
-            }
-        }
     }
     @media(max-width:430px) {
-        .block-style__bottom{
+        .block__bottom{
             display: block;
         }
-        .block-style__span{
+        .block__data{
             margin-bottom: 13px;
         }
     }
@@ -364,10 +343,11 @@ body{
         pointer-events: all;
     }
     &__link{
-        display: inline-block;
+        display: flex;
+        align-items: center;
         height: 40px;
         width: 86px;
-        padding: 13px 0 0 15px;
+        padding-left: 15px;
         font-weight: 400;
         font-size: 12px;
         line-height: 13px;
@@ -383,7 +363,9 @@ body{
             border-top: 5px solid #FFF;
             width: 0;
             height: 0;
-            margin: 4px 9.30px 0 7px;
+            margin-left: 7px;
+            margin-right: 9.30px;
+            margin-bottom: 2px;
         }
         &:hover{
             background-color: #3137C9;  
@@ -396,11 +378,10 @@ body{
         position: absolute;
         background-color: #3137C9;
         width: 165px;
-        height: 84px;
         padding-top: 10px;
         padding-left: 12px;
         z-index: 5;
-        transform: translate(-15.5px, 26px);
+        transform: translate(-15.5px, 80px);
         li{
             padding-bottom: 10px;
             &:hover{
@@ -582,9 +563,13 @@ body{
 }
 
 .input{
-    &__ip{
-        width: 100%;
+    margin-bottom: 30px;
+    &__form{
         height: 74px;
+    }
+    &__text{
+        width: 100%;  
+        height: 100%;
         background-color: #121212;
         box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
         border-radius: 5px;
@@ -593,6 +578,9 @@ body{
         line-height: 18px;
         color: #FFF;
         padding-left: 28px;
+        padding-right: 150px;
+        padding-top: 28px;
+        resize: none;
         &:-moz-placeholder{
             color: #D2D2D2;
         }
@@ -634,7 +622,7 @@ body{
     }
 }
 
-.block-style{
+.block{
     background-color: #202020;
     max-width: 600px;
     height: 100%;
@@ -645,19 +633,64 @@ body{
         padding: 26px 25px 25px 25px;
     }
     &__image{
-        width: 600px;
-        height: 245px;
+        max-width: 600px;
+        padding-top: 45%;
+        position: relative;
         img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+    }
+    &__video{
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-bottom: 25px;
+        position: relative;
+        max-width: 550px;
+        padding-top: 52%;
+        border-radius: 5px;  
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__youtube{
+        max-width: 600px;
+        padding-top: 56.25%;
+        background-color: white;
+        position: relative;
         iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             width: 100%;
             height: 100%;
         }
     }
-    &__p{
+    &__text{
         &_a{
             font-weight: 500;
             font-size: 18px;
@@ -679,7 +712,7 @@ body{
         display: flex;
         justify-content: space-between;
     }
-    &__span{
+    &__data{
         span{
             font-family: 'Lato', sans-serif;
             font-style: normal;
@@ -709,36 +742,19 @@ body{
         font-size: 14px;
         line-height: 16px;
         color: #107EFF;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
-.block{
-    &__span{
+.block1{
+    &__data{
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         color: #828282;
         font-family: 'Lato', sans-serif;
-    }
-}
-
-.block2{
-    padding-top: 25px;
-    &__image{
-        margin-right: 25px;
-        margin-left: 25px;
-        position: relative;
-        width: 550px;
-        height: 309.38px;
-        border-radius: 5px;  
-        video{
-            width: 100%;
-            height: 100%;
-        }
-        img{
-            width: 100%;
-            height: 100%;
-        }
     }
 }
 
@@ -749,12 +765,14 @@ body{
         justify-content: center;
     }
     &__btn{
+        padding-top: 12px;
+        display: block;
         background-color: #0D0D0D;
         width: 40px;
         height: 40px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
         border-radius: 3px;
-        margin: 0 0 0 10px;
+        margin-left: 10px;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -764,7 +782,11 @@ body{
         &:hover{
             background-color: #104BE3;
         }
+        &_b{
+            background-color: #104BE3;
+        }
         &_a{
+            padding-top: 18px;
             margin: 0;
             span{
                 display: block;
@@ -781,6 +803,7 @@ body{
             }
         }
         &_e{
+            padding-top: 18px;
             span{
                 display: block;
                 width: 8px;
