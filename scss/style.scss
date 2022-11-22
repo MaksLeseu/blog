@@ -33,9 +33,8 @@ body{
     background-color: #181818;
 }
 .container{
-    max-width: 630px;
+    max-width: 600px;
     margin: 60px auto 0px auto;
-    padding: 0px 15px;
     &._active-burger{
        opacity: 0.1;
        overflow: none;
@@ -48,8 +47,13 @@ body{
             margin-bottom: 20px;
         }
         .block__conteiner{
-            padding: 13px 15px 18px 15px;
+            padding: 0px 15px 18px 15px;
+            margin-top: 13px;
         }
+    }
+    @media(max-width:630px){
+        max-width: 630px;
+        padding: 0px 15px;
     }
     @media(max-width:430px) {
         .block__bottom{
@@ -551,16 +555,11 @@ body{
         }
     }
     @media(max-width:630px) {
-        &__image{
-            &_a{
-                display: none;
-            }
-            &_b{
-                display: none;
-            }
+        &__mobile-style{
+            display: none;
         }
     }
-}
+}   
 
 .input{
     margin-bottom: 30px;
@@ -580,6 +579,7 @@ body{
         padding-left: 28px;
         padding-right: 150px;
         padding-top: 28px;
+        padding-bottom: 28px;
         resize: none;
         &:-moz-placeholder{
             color: #D2D2D2;
@@ -630,7 +630,8 @@ body{
     border-radius: 5px;
     margin-bottom: 30px;
     &__conteiner{
-        padding: 26px 25px 25px 25px;
+        padding: 0px 25px 25px 25px;
+        margin-top: 26px;
     }
     &__image{
         max-width: 600px;
@@ -691,7 +692,7 @@ body{
         }
     }
     &__text{
-        &_a{
+        &_title{
             font-weight: 500;
             font-size: 18px;
             line-height: 21px;
@@ -699,7 +700,7 @@ body{
             color: #FFF;
             margin-bottom: 15px;
         }
-        &_b{
+        &_text-block{
             margin-bottom: 21px;
             font-style: normal;
             font-weight: 400;
@@ -748,7 +749,7 @@ body{
     }
 }
 
-.block1{
+.block-changes{
     &__data{
         font-weight: 400;
         font-size: 12px;
