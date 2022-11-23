@@ -473,9 +473,10 @@ body{
         font-size: 21px;
         line-height: 21px;
         color: #FFFFFF;
+        margin-bottom: 40px;
     }
     &__form{
-        margin: 40px 0 0 0;
+        margin-bottom: 20px;
     }
     &__input{
         margin: 10px 0 0 0;
@@ -492,10 +493,13 @@ body{
         &:focus{
             border-bottom: 1px solid #107EFF;
         }
+        &_indent{
+            margin-bottom: 25px;
+        }
     }
     &__btn{
         display: block;
-        margin: 25px auto 0px auto;
+        margin: 0px auto;
         background-color: #3137C9;
         width: 64px;
         height: 34px;
@@ -507,19 +511,21 @@ body{
         line-height: 14px;
         color: #FFFFFF;
     }
+    &__registration{
+        display: flex;
+        a{
+            &:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
     &__btn-two{
-        margin: 20px 0 0 0;
+        display: block;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
         background-color: #181818;
-        &_a{
-            margin: 20px 5px 0 0;
-        }
-        &_b{
-            margin: 20px 0px 0px 5px;
-        }
     }
 }

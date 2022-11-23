@@ -527,9 +527,10 @@ body._active-burger {
   font-size: 21px;
   line-height: 21px;
   color: #FFFFFF;
+  margin-bottom: 40px;
 }
 .authorization__form {
-  margin: 40px 0 0 0;
+  margin-bottom: 20px;
 }
 .authorization__input {
   margin: 10px 0 0 0;
@@ -547,9 +548,12 @@ body._active-burger {
 .authorization__input:focus {
   border-bottom: 1px solid #107EFF;
 }
+.authorization__input_indent {
+  margin-bottom: 25px;
+}
 .authorization__btn {
   display: block;
-  margin: 25px auto 0px auto;
+  margin: 0px auto;
   background-color: #3137C9;
   width: 64px;
   height: 34px;
@@ -561,20 +565,20 @@ body._active-burger {
   line-height: 14px;
   color: #FFFFFF;
 }
+.authorization__registration {
+  display: flex;
+}
+.authorization__registration a:first-child {
+  margin-right: 10px;
+}
 .authorization__btn-two {
-  margin: 20px 0 0 0;
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: #FFFFFF;
   background-color: #181818;
-}
-.authorization__btn-two_a {
-  margin: 20px 5px 0 0;
-}
-.authorization__btn-two_b {
-  margin: 20px 0px 0px 5px;
 }
 
 /*# sourceMappingURL=authorization.css.map */
