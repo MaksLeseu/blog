@@ -70,18 +70,19 @@
 					</div>
 					<nav class="header__menu">
 						<ul class="header__list">
-							<li><a href="index.html" class="header__link">Главная</a></li>
-							<li class="header__link header__link_arrow">Статьи<span></span>
+							<li class="header__link-shell"><a href="index.html" class="header__link">Главная</a></li>
+							<li class="header__link header__link_arrow header__link-shell">Статьи<span></span>
 								<ul class="header__list-menu">
+									<li><a href="article.html" class="header__link-menu">Базовая боксёрская комбинация</a></li>
 									<li><a href="block.html" class="header__link-menu">Создание сайтов</a></li>
 									<li><a href="page.html" class="header__link-menu">Результаты поиска</a></li>
-									<li><a href="" class="header__link-menu">Продвижение видео</a></li>
+									<li><a href="" class="header__link-menu">Продвижение видео</a></li> 
 								</ul>
 							</li>
-							<li><a href="" class="header__link">Обо мне</a></li>
-							<li><a href="" class="header__link">Реклама</a></li>	
+							<li class="header__link-shell"><a href="" class="header__link">Обо мне</a></li>
+							<li class="header__link-shell"><a href="" class="header__link">Реклама</a></li>	
 							<li class="header__link-empty"></li>
-							<li><a href="authorization.html" class="header__link">Профиль</a></li>
+							<li class="header__link-shell"><a href="authorization.html" class="header__link">Профиль</a></li>
 						</ul>
 						<form action="#">
 							<input class="header__input" placeholder="Поиск по блогу" type="text">
@@ -90,47 +91,39 @@
 				</header>
                 <div class="container">
                     <h1>Мои работы</h1>
-                    <section class="block1">
-                        <div class="block1__row">
-                            <div class="block1__column">
-                                <div class="block1__image">
-                                    <img src="./img/page2/page2-content.png" alt="">
-                                </div>
-                            </div>
-                            <div class="block1__column">
-                                <div class="block1__container">
-                                    <h2>altermono.com</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-                                    <span class="block1__span-a">дизайн</span>
-                                    <span class="block1__span-b">создание сайта</span>
-                                    <span class="block1__span-c">SMM</span>
-                                    <form class="block1__form" action="#">
-                                        <button class="block1__btn">Перейти на сайт</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                    <section class="block">
+                        <div class="block__image">
+							<img src="./img/page2/page2-content.png" alt="">
+						</div>
+						<div class="block__item">
+							<div class="block__container">
+								<h2>altermono.com</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+								<span class="block__tag-a">дизайн</span>
+								<span class="block__tag-b">создание сайта</span>
+								<span class="block__tag-c">SMM</span>
+								<div class="block__row">
+									<a href="" class="block__btn">Перейти на сайт</a>
+								</div>
+							</div>
+						</div>
                     </section>
-                    <section class="block2">
-                        <div class="block2__row">
-                            <div class="block2__column">
-                                <div class="block2__image">
-                                    <img src="./img/page2/2page2-content.png" alt="">
-                                </div>
-                            </div>
-                            <div class="block2__column">
-                                <div class="block2__container">
-                                    <h2>codedoco.com</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. </p>
-                                    <span class="block2__span-a">дизайн</span>
-                                    <span class="block2__span-b">создание сайта</span>
-                                    <span class="block2__span-c">SMM</span>
-                                    <form class="block2__form" action="#">
-                                        <button class="block2__btn">Перейти на сайт</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                    <section class="block">
+						<div class="block-changes__image">
+							<img src="./img/page2/2page2-content.png" alt="">
+						</div>
+                        <div class="block__item">
+							<div class="block__container">
+								<h2>codedoco.com</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. </p>
+								<span class="block__tag">дизайн</span>
+								<span class="block__tag">создание сайта</span>
+								<span class="block__tag">SMM</span>
+								<div class="block__row">
+									<a href="" class="block__btn">Перейти на сайт</a>
+								</div>
+							</div>
+						</div>
                     </section>
                 </div>
             </div>

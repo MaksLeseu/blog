@@ -364,10 +364,11 @@ body{
         pointer-events: all;
     }
     &__link{
-        display: inline-block;
+        display: flex;
+        align-items: center;
         height: 40px;
         width: 86px;
-        padding: 13px 0 0 15px;
+        padding-left: 15px;
         font-weight: 400;
         font-size: 12px;
         line-height: 13px;
@@ -383,7 +384,9 @@ body{
             border-top: 5px solid #FFF;
             width: 0;
             height: 0;
-            margin: 4px 9.30px 0 7px;
+            margin-left: 7px;
+            margin-right: 9.30px;
+            margin-bottom: 2px;
         }
         &:hover{
             background-color: #3137C9;  
@@ -396,11 +399,10 @@ body{
         position: absolute;
         background-color: #3137C9;
         width: 165px;
-        height: 84px;
         padding-top: 10px;
         padding-left: 12px;
         z-index: 5;
-        transform: translate(-15.5px, 26px);
+        transform: translate(-15.5px, 80px);
         li{
             padding-bottom: 10px;
             &:hover{
@@ -501,7 +503,7 @@ body{
            display: none;
         }
     } 
-}  
+}    
 
 .block{
     background-color: #202020;

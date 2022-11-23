@@ -105,28 +105,32 @@ body._active-burger {
   .container .block__top p {
     margin-bottom: 18px;
   }
-  .container .block .top__span {
+  .container .block__data {
     margin-bottom: 18px;
   }
-  .container .block .top__image {
+  .container .block__image {
     width: 260px;
     height: 108.25px;
     margin: 0px auto 18px auto;
   }
-  .container .block .top__tag-back_none {
+  .container .block__video {
+    width: 260px;
+    height: 108.25px;
+    margin: 0px auto 18px auto;
+  }
+  .container .block__btn_none {
     display: none;
   }
-  .container .block .bottom__input {
-    width: 260px;
-  }
-  .container .block .bottom__coments_b {
-    padding: 30px 0 42px 10px;
-  }
 }
-@media (max-width: 611px) {
-  .container .bottom__list_b {
-    margin-top: 24px;
-    margin-right: 63px;
+@media (max-width: 600px) {
+  .container .block__row li:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .container .block__row li:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .container .block__row li:nth-child(3) {
+    margin-bottom: 20px;
   }
 }
 
@@ -407,10 +411,11 @@ body._active-burger {
   pointer-events: all;
 }
 .header__link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   height: 40px;
   width: 86px;
-  padding: 13px 0 0 15px;
+  padding-left: 15px;
   font-weight: 400;
   font-size: 12px;
   line-height: 13px;
@@ -427,7 +432,9 @@ body._active-burger {
   border-top: 5px solid #FFF;
   width: 0;
   height: 0;
-  margin: 4px 9.3px 0 7px;
+  margin-left: 7px;
+  margin-right: 9.3px;
+  margin-bottom: 2px;
 }
 .header__link:hover {
   background-color: #3137C9;
@@ -439,11 +446,10 @@ body._active-burger {
   position: absolute;
   background-color: #3137C9;
   width: 165px;
-  height: 84px;
   padding-top: 10px;
   padding-left: 12px;
   z-index: 5;
-  transform: translate(-15.5px, 26px);
+  transform: translate(-15.5px, 80px);
 }
 .header__list-menu li {
   padding-bottom: 10px;
@@ -547,51 +553,21 @@ body._active-burger {
   background-color: #202020;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
+  padding-top: 16px;
 }
 .block__conteiner {
-  padding: 16px 25px 42px 25px;
+  padding: 0 25px 13px 25px;
 }
-.block__top h1 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFF;
-  margin-bottom: 5px;
-}
-.block__top p {
-  margin-bottom: 30px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #FFF;
-}
-.block__bottom h2 {
-  padding-top: 30px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFF;
-  border-top: 1px solid #1C1C1C;
-  margin: 30px 0 19px 0;
-}
-.block__bottom p {
-  margin-bottom: 5px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #FFF;
-}
-
-.top__tag {
+.block__button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
 }
-.top__tag-back {
+.block__button_row {
+  display: flex;
+  margin: -3px 0 0 0;
+}
+.block__btn {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -600,21 +576,25 @@ body._active-burger {
   color: #FFFFFF;
   opacity: 0.8;
 }
-.top__tag-back_form {
-  display: flex;
-  margin: -3px 0 0 0;
-}
-.top__tag-back_share {
+.block__btn_share {
   background-color: #202020;
   margin: 0 0 0 7.63px;
 }
-.top__tag-back:hover {
+.block__btn:hover {
   text-decoration: underline;
 }
-.top__span {
+.block h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFF;
+  margin-bottom: 5px;
+}
+.block__data {
   margin-bottom: 30px;
 }
-.top__span span {
+.block__data span {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -623,10 +603,10 @@ body._active-burger {
   color: #828282;
   position: relative;
 }
-.top__span span:first-child {
+.block__data span:first-child {
   padding: 0 36px 0 0;
 }
-.top__span span:first-child:after {
+.block__data span:first-child:after {
   content: "";
   width: 6px;
   height: 6px;
@@ -636,52 +616,64 @@ body._active-burger {
   right: 13px;
   top: 25%;
 }
-.top__image {
+.block p {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFF;
+}
+.block__image {
   margin-bottom: 25px;
   width: 550px;
   height: 229;
 }
-.top__image img {
+.block__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.top__video {
+.block__video {
   width: 550px;
   height: 300px;
+  margin-bottom: 30px;
 }
-.top__video iframe {
+.block__video iframe {
   width: 100%;
   height: 100%;
 }
-
-.bottom__row {
-  display: flex;
-  padding-top: 19px;
-  flex-wrap: wrap;
-  margin: 0px -28px;
-  justify-content: space-between;
-}
-.bottom__list {
-  padding: 0px 28px;
-}
-.bottom__list_b {
-  margin-right: 145px;
-}
-.bottom__list_c {
-  margin-top: 24px;
-}
-.bottom__list_d {
-  margin-top: 24px;
-}
-.bottom__link {
+.block h2 {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #F3EBA2;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFF;
+  margin-bottom: 19px;
 }
-.bottom__link span {
+.block__links {
+  border-top: 1px solid #1C1C1C;
+  border-bottom: 1px solid #1C1C1C;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.block__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block__row li:nth-child(1) {
+  margin-bottom: 24px;
+}
+.block__row li:nth-child(2) {
+  margin-bottom: 24px;
+}
+.block__list {
+  display: block;
+  width: 244px;
+}
+.block__list span {
   display: block;
   margin-top: 5px;
   font-style: normal;
@@ -690,7 +682,23 @@ body._active-burger {
   line-height: 14px;
   color: #828282;
 }
-.bottom__link:hover {
+.block__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #F3EBA2;
+}
+.block__link span {
+  display: block;
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+.block__link:hover {
   text-decoration: underline;
 }
 

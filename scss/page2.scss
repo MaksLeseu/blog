@@ -42,7 +42,6 @@ body{
     }
     h1{
         display: inline-block;
-        margin: 60px 0 0 0;
         font-style: normal;
         font-weight: 400;
         font-size: 21px;
@@ -332,10 +331,11 @@ body{
         pointer-events: all;
     }
     &__link{
-        display: inline-block;
+        display: flex;
+        align-items: center;
         height: 40px;
         width: 86px;
-        padding: 13px 0 0 15px;
+        padding-left: 15px;
         font-weight: 400;
         font-size: 12px;
         line-height: 13px;
@@ -351,7 +351,9 @@ body{
             border-top: 5px solid #FFF;
             width: 0;
             height: 0;
-            margin: 4px 9.30px 0 7px;
+            margin-left: 7px;
+            margin-right: 9.30px;
+            margin-bottom: 2px;
         }
         &:hover{
             background-color: #3137C9;  
@@ -364,11 +366,10 @@ body{
         position: absolute;
         background-color: #3137C9;
         width: 165px;
-        height: 84px;
         padding-top: 10px;
         padding-left: 12px;
         z-index: 5;
-        transform: translate(-15.5px, 26px);
+        transform: translate(-15.5px, 80px);
         li{
             padding-bottom: 10px;
             &:hover{
@@ -471,20 +472,18 @@ body{
     } 
 } 
 
-.block1{
+.block{
     background-color: #202020;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
     border-radius: 5px;
     width: 100%;
     margin: 30px 0 0 0;
-    &__row{
-        display: flex;
-    }
+    display: flex;
     &__container{
         padding: 28px 25px 25px 25px;
     }
     &__image{
-        width: 310px;
+        min-width: 310px;
         height: 552px;
         img{
             width: 100%;
@@ -507,6 +506,8 @@ body{
         color: #D2D2D2;
     }
     span{
+        margin-bottom: 89px;
+        display: inline-block;
         font-style: normal;
         font-weight: 400;
         font-size: 11px;
@@ -515,19 +516,19 @@ body{
         background-color: #EA8C1E;
         border-radius: 3px;
         padding: 4px 9px;
+        &:first-child {
+            margin-left: 10px;
+        }
     }
-    &__span-b{
-        margin: 0 0 0 10px;
-    }
-    &__span-c{
-        margin: 0 0 0 10px;
-    }
-    &__form{
-        margin: 89px 0 0 0;
+    &__row{
         display: flex;
         flex-direction: row-reverse;
+        
     }
     &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 120px;
         height: 30px;
         background-color: #3137C9;
@@ -541,72 +542,13 @@ body{
     }
 }
 
-.block2{
-    background-color: #202020;
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
-    border-radius: 5px;
-    width: 100%;
-    margin: 30px 0 0 0;
-    &__row{
-        display: flex;
-    }
-    &__container{
-        padding: 28px 25px 25px 25px;
-    }
+.block-changes{
     &__image{
-        width: 310px;
+        min-width: 310px;
         height: 512px;
         img{
             width: 100%;
             height: 100%;
         }
-    }
-    h2{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
-        color: #FFFFFF;
-    }
-    p{
-        padding: 30px 0 30px 0;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 27px;
-        color: #D2D2D2;
-    }
-    span{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 13px;
-        color: #FFFFFF;
-        background-color: #EA8C1E;
-        border-radius: 3px;
-        padding: 4px 9px;
-    }
-    &__span-b{
-        margin: 0 0 0 10px;
-    }
-    &__span-c{
-        margin: 0 0 0 10px;
-    }
-    &__form{
-        margin: 124px 0 0 0;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    &__btn{
-        width: 120px;
-        height: 30px;
-        background-color: #3137C9;
-        box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
-        border-radius: 5px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        color: #FFFFFF;
     }
 }
