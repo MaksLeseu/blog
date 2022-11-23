@@ -631,12 +631,12 @@ body{
     margin-bottom: 30px;
     &__conteiner{
         padding: 0px 25px 25px 25px;
-        margin-top: 26px;
     }
     &__image{
         max-width: 600px;
         padding-top: 45%;
         position: relative;
+        margin-bottom: 26px;
         img{
             position: absolute;
             top: 0;
@@ -681,6 +681,7 @@ body{
         padding-top: 56.25%;
         background-color: white;
         position: relative;
+        margin-bottom: 26px;
         iframe{
             position: absolute;
             top: 0;
@@ -750,6 +751,11 @@ body{
 }
 
 .block-changes{
+    padding-top: 26px;
+    &__conteiner{
+        padding: 0 25px 25px 25px;
+        
+    }
     &__data{
         font-weight: 400;
         font-size: 12px;

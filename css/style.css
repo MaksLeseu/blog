@@ -684,12 +684,12 @@ body._active-burger {
 }
 .block__conteiner {
   padding: 0px 25px 25px 25px;
-  margin-top: 26px;
 }
 .block__image {
   max-width: 600px;
   padding-top: 45%;
   position: relative;
+  margin-bottom: 26px;
 }
 .block__image img {
   position: absolute;
@@ -734,6 +734,7 @@ body._active-burger {
   padding-top: 56.25%;
   background-color: white;
   position: relative;
+  margin-bottom: 26px;
 }
 .block__youtube iframe {
   position: absolute;
@@ -797,6 +798,12 @@ body._active-burger {
   text-decoration: underline;
 }
 
+.block-changes {
+  padding-top: 26px;
+}
+.block-changes__conteiner {
+  padding: 0 25px 25px 25px;
+}
 .block-changes__data {
   font-weight: 400;
   font-size: 12px;
