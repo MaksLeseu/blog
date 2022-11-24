@@ -33,14 +33,17 @@ body{
     background-color: #181818;
 }
 .container{
-    max-width: 630px;
+    max-width: 600px;
     margin: 60px auto 80px auto;
-    padding: 0px 15px;
     &._active-burger{
         opacity: 0.1;
         overflow: none;
-     }
-    @media(max-width:679px){
+    }
+    @media(max-width:630px) {
+        max-width: 630px;
+        padding: 0px 15px;
+    }
+    @media(max-width:679px) {
         .block{
             &__top{
                 p{
@@ -49,11 +52,6 @@ body{
             }
             &__data{
                 margin-bottom: 18px;
-            }
-            &__image{
-                width: 260px;
-                height: 108.25px;
-                margin: 0px auto 18px auto;
             }
             &__btn{
                 &_none{
@@ -580,10 +578,16 @@ body{
         color: #FFF;
     }
     &__image{
-        margin-bottom: 25px;
-        width: 550px;
-        height: 229;
+        max-width: 600px;
+        padding-top: 45%;
+        position: relative;
+        margin-bottom: 26px;
         img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;

@@ -70,18 +70,19 @@
 					</div>
 					<nav class="header__menu">
 						<ul class="header__list">
-							<li><a href="index.html" class="header__link">Главная</a></li>
-							<li class="header__link header__link_arrow">Статьи<span></span>
+							<li class="header__link-shell"><a href="index.html" class="header__link">Главная</a></li>
+							<li class="header__link header__link_arrow header__link-shell">Статьи<span></span>
 								<ul class="header__list-menu">
+									<li><a href="article.html" class="header__link-menu">Базовая боксёрская комбинация</a></li>
 									<li><a href="block.html" class="header__link-menu">Создание сайтов</a></li>
 									<li><a href="page.html" class="header__link-menu">Результаты поиска</a></li>
-									<li><a href="" class="header__link-menu">Продвижение видео</a></li>
+									<li><a href="" class="header__link-menu">Продвижение видео</a></li> 
 								</ul>
 							</li>
-							<li><a href="" class="header__link">Обо мне</a></li>
-							<li><a href="" class="header__link">Реклама</a></li>	
+							<li class="header__link-shell"><a href="" class="header__link">Обо мне</a></li>
+							<li class="header__link-shell"><a href="" class="header__link">Реклама</a></li>	
 							<li class="header__link-empty"></li>
-							<li><a href="authorization.html" class="header__link">Профиль</a></li>
+							<li class="header__link-shell"><a href="authorization.html" class="header__link">Профиль</a></li>
 						</ul>
 						<form action="#">
 							<input class="header__input" placeholder="Поиск по блогу" type="text">
@@ -90,25 +91,29 @@
 				</header>
                 <div class="container">
                     <section class="profile">
-                        <div class="profile__column">
-                            <h1>Регистрация</h1>
-                            <form class="profile__form" action="#">
-                                <input class="profile__input" placeholder="Логин" type="text">
-                                <input class="profile__input" placeholder="@ mail" type="text">
-                                <input class="profile__input" placeholder="Пароль" type="password">
-                                <input class="profile__input" placeholder="Подтвердить пароль" type="password">
-                                <button class="profile__btn" type="submit">Сохранить</button>
-                            </form>
-                        </div>
-                        <div class="profile__column profile__column_two">
-                            <div class="profile__image">
-                                <img src="./img/profile/avatar-profile.png" alt="">
-                            </div>
-                            <div class="profile__div">
-                                <input class="profile__input-file" id="profile__input-file" type="file">
-                                <label class="profile__btn-two" for="profile__input-file">выбрать аватар</label>
-                            </div>
-                        </div>
+						<h1>Регистрация</h1>
+						<div class="profile__row">
+							<div class="profile__column">
+								<form action="#" class="profile__form">
+									<input class="profile__input" placeholder="Логин" type="text">
+									<input class="profile__input" placeholder="email" type="text">
+									<input class="profile__input" placeholder="Пароль" type="password">
+									<input class="profile__input" placeholder="Подтвердите пароль" type="password">
+								</form>
+							</div>
+							<div class="profile__column profile__column_two">
+								<div class="profile__image">
+									<img src="./img/profile/avatar-profile.png" alt="">
+								</div>
+								<div>
+									<input class="profile__input-file" id="profile__input-file" type="file">
+									<label class="profile__btn-two" for="profile__input-file">выбрать аватар</label>
+								</div>
+							</div>
+						</div>
+						<form action="#">
+							<button class="profile__btn" type="submit">Сохранить</button>
+						</form>
                     </section>
                 </div>
             </div>
