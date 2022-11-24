@@ -65,6 +65,53 @@ body{
     }
 }
 
+.test{
+    width: 100%;
+    margin-bottom: 30px;
+    span{
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFF;
+        max-width: 110px;
+        opacity: 0.9;
+        &:first-of-type{
+            top: 14px;
+            left: 14px;
+        }
+        &:last-child{
+            bottom: 14px;
+            right: 17px;
+            text-transform: uppercase;
+        }
+    }
+}
+.image-slider {
+    &__image {
+        position: relative;
+        width: 140px;
+        height: 195px;
+        border-radius: 5px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            &:hover{
+                background-color: #0D0D0D;
+                opacity: 0.5;
+            }
+        }
+        &:hover{
+            border: 1px #3137C9 solid;
+            box-shadow: 1px 1px 5px #3137C9;
+        }
+    }
+    
+}
 
 .sidebar{
     max-width: 300px;
@@ -490,7 +537,8 @@ body{
 
 .gallery{
     margin-bottom: 30px;
-    &__row{
+    width: 100%;
+   /* &__row{
         display: flex;
         justify-content: center;
     }
@@ -504,10 +552,10 @@ body{
             width: 100%;
             height: 100%;
         }
-    }
+    }*/
     &__image{
-        position: relative;
-        margin: 0px 6.5px;
+        /*position: relative;
+        margin: 0px 6.5px;*/
         width: 140px;
         height: 195px;
         border-radius: 5px;
@@ -521,12 +569,12 @@ body{
             border: 1px #3137C9 solid;
             box-shadow: 1px 1px 5px #3137C9;
         }
-        &:first-child{
+       /* &:first-child{
             margin-right: 6.5px;
         }
         &:last-child{
             margin-left: 6.5px;
-        }
+        }*/
         img{
             width: 100%;
             height: 100%;
@@ -534,7 +582,7 @@ body{
             object-fit: cover; 
         }
     }
-    span{
+    /*span{
         position: absolute;
         font-family: 'Lato', sans-serif;
         font-style: normal;
@@ -558,7 +606,7 @@ body{
         &__mobile-style{
             display: none;
         }
-    }
+    }*/
 }   
 
 .input{

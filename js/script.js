@@ -1,5 +1,29 @@
 "use strict"
 
+new Swiper('.image-slider',{
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: 'swiper-pagination',
+        clickable: true,
+    },
+    // Количество элементов
+    slidesPerView: 4,
+    // Отступ
+    spaceBetween: 6,
+    // Количество пролиствоемых слайдов
+    slidesPerGroup: 2,
+});
+
+new Swiper('.gallery',{
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 4,
+});
 
 const MenuBurger = document.querySelector('.header__burger');
 const Sidebar = document.querySelector('.sidebar');
@@ -21,6 +45,8 @@ SidebarLinkMenu.addEventListener("click", function(e) {
     SidebarMenu.classList.toggle('_active-menu');
     SidebarSpan.classList.toggle('_active-menu');
 });
+
+
 
 
 

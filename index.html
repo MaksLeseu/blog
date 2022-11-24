@@ -4,6 +4,7 @@
 		<title>Blog</title>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="css/style.css">
 		<!-- Для старых сайтов -->
 		<link rel="icon" type="image/png" href="./img/favicon/favicon-boxing.ico" sizes="32x32" type="image/x-icon">
@@ -86,7 +87,7 @@
 					</nav>
 				</header>
 				<div class="container">
-					<section class="gallery">
+					<!--<section class="gallery">
 						<div class="gallery__row">
 							<div class="gallery__image">
 								<a data-fslightbox="gallery" href="./img/index/gallery/1Gallery.jpg">
@@ -112,6 +113,182 @@
 								<span>Античный воин</span>
 								<span>28.09.2020</span></a>
 							</div>
+						</div>
+					</section>-->
+					<section class="gallery swiper">
+						<div class="gallery swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="gallery__image">
+										<img src="./img/index/gallery/1Gallery.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="gallery__image">
+										<img src="./img/index/gallery/2Gallery.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="gallery__image">
+										<img src="./img/index/gallery/3Gallery.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="gallery__image">
+										<img src="./img/index/gallery/4Gallery.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="gallery__image">
+										<img src="./img/index/gallery/5Gallery.jpg" alt="">
+									</div>
+								</div>
+								<div class="swiper-slider">
+									<div class="gallery__image">
+										<img src="./img/index/gallery/6Gallery.jpg" alt="">
+									</div>
+								</div>
+								<!--<div class="swiper-slider">
+									<div class="gallery__image">
+										<a data-fslightbox="gallery" href="./img/index/gallery/6Gallery.jpg">
+											<img src="./img/index/gallery/7Gallery.jpg" alt="">
+											<span>Отдыхаю на природе</span>
+											<span>15.09.2020</span></a>
+									</div>
+								</div>
+								<div class="swiper-slider">
+									<div class="gallery__image">
+										<a data-fslightbox="gallery" href="./img/index/gallery/8Gallery.jpg">
+											<img src="./img/index/gallery/8Gallery.jpg" alt="">
+											<span>Отдыхаю на природе</span>
+											<span>15.09.2020</span></a>
+									</div>
+								</div>
+								<div class="swiper-slider">
+									<div class="gallery__image">
+										<a data-fslightbox="gallery" href="./img/index/gallery/9Gallery.jpg">
+											<img src="./img/index/gallery/9Gallery.jpg" alt="">
+											<span>Отдыхаю на природе</span>
+											<span>15.09.2020</span></a>
+									</div>
+								</div>
+								<div class="swiper-slider">
+									<div class="gallery__image">
+										<a data-fslightbox="gallery" href="./img/index/gallery/10Gallery.jpg">
+											<img src="./img/index/gallery/10Gallery.jpg" alt="">
+											<span>Отдыхаю на природе</span>
+											<span>15.09.2020</span></a>
+									</div>
+								</div>-->
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-scrollbar"></div>
+						</div>
+					</section>
+					<section class="test">
+						<div class="swiper">
+							<div class="image-slider swiper-container">
+								<div class="swiper-wrapper">
+									<div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<a data-fslightbox="test" href="./img/index/gallery/1Gallery.jpg">
+												<img src="./img/index/gallery/1Gallery.jpg" alt="">
+											<span>Отдыхаю на природе</span>
+											<span>15.09.2020</span></a>
+										</div>
+								  	</div>
+								  	<div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<a data-fslightbox="test" href="./img/index/gallery/2Gallery.jpg">
+												<img src="./img/index/gallery/2Gallery.jpg" alt="">
+											<span>Чилю на берегу моря</span>
+											<span>16.09.2020</span></a>
+										</div>
+							  		</div>
+							  		<div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<a data-fslightbox="test" href="./img/index/gallery/3Gallery.jpg">
+												<img src="./img/index/gallery/3Gallery.jpg" alt="">
+											<span>Переехал в новую галактику</span>
+											<span>25.09.2020</span></a>
+										</div>
+						  			</div>
+						  			<div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<a data-fslightbox="test" href="./img/index/gallery/4Gallery.jpg">
+												<img src="./img/index/gallery/4Gallery.jpg" alt="">
+											<span>Античный воин</span>
+											<span>28.09.2020</span></a>
+										</div>
+					  				</div>
+									<div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<div class="image-slider__image">
+												<a data-fslightbox="test" href="./img/index/gallery/5Gallery.jpg">
+													<img src="./img/index/gallery/5Gallery.jpg" alt="">
+												<span>Расслабляюсь на Днепре</span>
+												<span>05.10.2020</span></a>
+											</div>
+										</div>
+								  </div>
+								  <div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<div class="image-slider__image">
+												<a data-fslightbox="test" href="./img/index/gallery/6Gallery.jpg">
+													<img src="./img/index/gallery/6Gallery.jpg" alt="">
+												<span>Похоже на конец</span>
+												<span>10.10.2020</span></a>
+											</div>
+										</div>
+								  </div>
+								  <div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<div class="image-slider__image">
+												<a data-fslightbox="test" href="./img/index/gallery/7Gallery.jpg">
+													<img src="./img/index/gallery/7Gallery.jpg" alt="">
+												<span>Венеция</span>
+												<span>15.10.2020</span></a>
+											</div>
+										</div>
+								  </div>
+								  <div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<div class="image-slider__image">
+												<a data-fslightbox="test" href="./img/index/gallery/8Gallery.jpg">
+													<img src="./img/index/gallery/8Gallery.jpg" alt="">
+												<span>Открыл барчик</span>
+												<span>28.10.2020</span></a>
+											</div>
+										</div>
+								  </div>
+								  <div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<div class="image-slider__image">
+												<a data-fslightbox="test" href="./img/index/gallery/9Gallery.jpg">
+													<img src="./img/index/gallery/9Gallery.jpg" alt="">
+												<span>Купил кемпер</span>
+												<span>05.11.2020</span></a>
+											</div>
+										</div>
+							  		</div>
+							  		<div class="image-slider__slide swiper-slide">
+										<div class="image-slider__image">
+											<div class="image-slider__image">
+												<a data-fslightbox="test" href="./img/index/gallery/10Gallery.jpg">
+													<img src="./img/index/gallery/10Gallery.jpg" alt="">
+												<span>Пей пиво</span>
+												<span>24.11.2020</span></a>
+											</div>
+										</div>
+						  			</div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-scrollbar"></div>
+							  </div>
 						</div>
 					</section>
 					<section class="input">
@@ -180,10 +357,10 @@
 					</section>
 					<section class="block">
 						<div class="block__image">
-							<img src="./img/index/content/4content-image.jpg" alt="">
+							<img src="./img/index/content/4content-image.png" alt="">
 						</div>
 						<div class="block__conteiner">
-							<p class="block__text_title">Акцент - теннисный мячик.</p>
+							<p class="block__text_title">Основа шагов и ударов!</p>
 							<p class="block__text_text-block">Акцент, теннисный мячик - ещё одно упражнение для акцента удара которое научит вас концентрировать энергию  и пробивать противника более плотными ударами.</p>
 							<div class="block__bottom">
 								<div class="block__data">
@@ -223,6 +400,7 @@
 				</footer>
 			</div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/fslightbox.js"></script>
     </body>
