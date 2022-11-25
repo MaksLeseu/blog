@@ -15,6 +15,17 @@ new Swiper('.gallery-slider',{
     spaceBetween: 14,
     // Количество пролиствоемых слайдов
     slidesPerGroup: 2,
+    breakpoints: {
+        300: {
+            slidesPerView: 2,
+        },
+        460: {
+            slidesPerView: 3,
+        },
+        630: {
+            slidesPerView: 4,
+        }
+    },
 });
 
 

@@ -91,6 +91,7 @@ body{
 }
 .gallery-slider {
     &__image {
+        margin: 0px auto;
         position: relative;
         width: 140px;
         height: 195px;
@@ -105,10 +106,6 @@ body{
                 opacity: 0.5;
             }
         }
-        /*&:hover{
-            border: 1px #3137C9 solid;
-            box-shadow: 1px 1px 5px #3137C9;
-        }*/
     }
     
 }

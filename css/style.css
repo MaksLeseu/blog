@@ -153,14 +153,11 @@ body._active-burger {
 }
 
 .gallery-slider__image {
+  margin: 0px auto;
   position: relative;
   width: 140px;
   height: 195px;
   border-radius: 5px;
-  /*&:hover{
-      border: 1px #3137C9 solid;
-      box-shadow: 1px 1px 5px #3137C9;
-  }*/
 }
 .gallery-slider__image img {
   width: 100%;
