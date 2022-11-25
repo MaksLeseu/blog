@@ -1,6 +1,6 @@
 "use strict"
 
-new Swiper('.image-slider',{
+new Swiper('.gallery-slider',{
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -12,18 +12,12 @@ new Swiper('.image-slider',{
     // Количество элементов
     slidesPerView: 4,
     // Отступ
-    spaceBetween: 6,
+    spaceBetween: 14,
     // Количество пролиствоемых слайдов
     slidesPerGroup: 2,
 });
 
-new Swiper('.gallery',{
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 4,
-});
+
 
 const MenuBurger = document.querySelector('.header__burger');
 const Sidebar = document.querySelector('.sidebar');
