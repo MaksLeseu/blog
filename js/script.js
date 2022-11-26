@@ -15,6 +15,7 @@ new Swiper('.gallery-slider',{
     spaceBetween: 14,
     // Количество пролиствоемых слайдов
     slidesPerGroup: 2,
+    // Мобильная версия
     breakpoints: {
         300: {
             slidesPerView: 2,
@@ -26,6 +27,7 @@ new Swiper('.gallery-slider',{
             slidesPerView: 4,
         }
     },
+    speed: 800,
 });
 
 

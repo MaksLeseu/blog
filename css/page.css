@@ -100,7 +100,7 @@ body._active-burger {
   opacity: 0.1;
   overflow: none;
 }
-.container h1 {
+.container p {
   display: inline-block;
   font-style: normal;
   font-weight: 400;
@@ -464,12 +464,14 @@ body._active-burger {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+  transition: all 0.3s ease 0s;
   color: #FFF;
 }
 .header__input:-moz-placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 .header__input:focus {
+  transition: width 0.3s ease 0s;
   border: 1px #3137C9 solid;
   width: 300px;
   box-shadow: 1px 1px 5px #3137C9;

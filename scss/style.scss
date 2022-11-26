@@ -34,7 +34,7 @@ body{
 }
 .container{
     max-width: 600px;
-    margin: 60px auto 0px auto;
+    margin: 60px auto 60px auto;
     &._active-burger{
        opacity: 0.1;
        overflow: none;
@@ -63,51 +63,6 @@ body{
             margin-bottom: 13px;
         }
     }
-}
-
-.gallery{
-    width: 100%;
-    margin-bottom: 30px;
-    span {
-        position: absolute;
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        color: #FFF;
-        max-width: 110px;
-        opacity: 0.9;
-        &:first-of-type{
-            top: 14px;
-            left: 14px;
-        }
-        &:last-child{
-            bottom: 14px;
-            right: 17px;
-            text-transform: uppercase;
-        }
-    }
-}
-.gallery-slider {
-    &__image {
-        margin: 0px auto;
-        position: relative;
-        width: 140px;
-        height: 195px;
-        border-radius: 5px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 5px;
-            &:hover{
-                background-color: #0D0D0D;
-                opacity: 0.5;
-            }
-        }
-    }
-    
 }
 
 .sidebar{
@@ -454,11 +409,13 @@ body{
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
+        transition: all 0.3s ease 0s;
         &:-moz-placeholder{
             color: rgba(255, 255, 255, 0.4);
         }
         color: #FFF;
         &:focus{
+            transition: width 0.3s ease 0s;
             border: 1px #3137C9 solid;
             width: 300px;
             box-shadow: 1px 1px 5px #3137C9;
@@ -530,56 +487,12 @@ body{
            display: none;
         }
     } 
-}  
+}   
 
-.gallery1{
-    margin-bottom: 30px;
+.gallery{
     width: 100%;
-   /* &__row{
-        display: flex;
-        justify-content: center;
-    }
-    &__icon{
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }*/
-    &__image{
-        /*position: relative;
-        margin: 0px 6.5px;*/
-        width: 140px;
-        height: 195px;
-        border-radius: 5px;
-        img{
-            &:hover{
-                background-color: #0D0D0D;
-                opacity: 0.5;
-            }
-        }
-        &:hover{
-            border: 1px #3137C9 solid;
-            box-shadow: 1px 1px 5px #3137C9;
-        }
-       /* &:first-child{
-            margin-right: 6.5px;
-        }
-        &:last-child{
-            margin-left: 6.5px;
-        }*/
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            object-fit: cover; 
-        }
-    }
-    /*span{
+    margin-bottom: 30px;
+    span {
         position: absolute;
         font-family: 'Lato', sans-serif;
         font-style: normal;
@@ -599,12 +512,37 @@ body{
             text-transform: uppercase;
         }
     }
-    @media(max-width:630px) {
-        &__mobile-style{
-            display: none;
+}
+.gallery-slider {
+    &__image {
+        margin: 0px auto;
+        position: relative;
+        width: 140px;
+        height: 195px;
+        border-radius: 5px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            &:hover{
+                background-color: #0D0D0D;
+                opacity: 0.5;
+            }
         }
-    }*/
-}   
+    }
+    
+}
+.swiper-button-prev {
+    &:after {
+        color: #181818;
+    }
+}
+.swiper-button-next {
+    &:after {
+        color: #181818;
+    }
+}
 
 .input{
     margin-bottom: 30px;
@@ -675,13 +613,12 @@ body{
     border-radius: 5px;
     margin-bottom: 30px;
     &__conteiner{
-        padding: 0px 25px 25px 25px;
+        padding: 26px 25px 25px 25px;
     }
     &__image{
         max-width: 600px;
         padding-top: 45%;
         position: relative;
-        margin-bottom: 26px;
         img{
             position: absolute;
             top: 0;
@@ -696,7 +633,6 @@ body{
     &__video{
         margin-right: 25px;
         margin-left: 25px;
-        margin-bottom: 25px;
         position: relative;
         max-width: 550px;
         padding-top: 52%;
@@ -726,7 +662,6 @@ body{
         padding-top: 56.25%;
         background-color: white;
         position: relative;
-        margin-bottom: 26px;
         iframe{
             position: absolute;
             top: 0;
@@ -757,7 +692,31 @@ body{
     }
     &__bottom{
         display: flex;
-        justify-content: space-between;
+        span{
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #828282;
+            position: relative;
+            &:first-child{
+                padding: 0 36px 0 0;
+                &:after{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background-color: #C4C4C4;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: 13px;
+                    top: 25%;
+                }
+            }
+            &:nth-child(2) {
+                flex: 50%;
+            }
+        }
     }
     &__data{
         span{
@@ -796,11 +755,7 @@ body{
 }
 
 .block-changes{
-    padding-top: 26px;
-    &__conteiner{
-        padding: 0 25px 25px 25px;
-        
-    }
+    padding: 26px 25px 25px 25px;
     &__data{
         font-weight: 400;
         font-size: 12px;
@@ -811,13 +766,12 @@ body{
 }
 
 .footer{
-    margin: 60px 0 80px 0;
-    &__row{
+    margin-bottom: 80px;
+    &__row {
         display: flex;
         justify-content: center;
-    }
+    }    
     &__btn{
-        padding-top: 12px;
         display: block;
         background-color: #0D0D0D;
         width: 40px;
@@ -838,7 +792,6 @@ body{
             background-color: #104BE3;
         }
         &_a{
-            padding-top: 18px;
             margin: 0;
             span{
                 display: block;
@@ -855,7 +808,6 @@ body{
             }
         }
         &_e{
-            padding-top: 18px;
             span{
                 display: block;
                 width: 8px;

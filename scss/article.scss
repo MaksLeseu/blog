@@ -423,11 +423,13 @@ body{
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
+        transition: all 0.3s ease 0s;
         &:-moz-placeholder{
             color: rgba(255, 255, 255, 0.4);
         }
         color: #FFF;
         &:focus{
+            transition: width 0.3s ease 0s;
             border: 1px #3137C9 solid;
             width: 300px;
             box-shadow: 1px 1px 5px #3137C9;
@@ -534,7 +536,7 @@ body{
             text-decoration: underline;
         }
     }
-    h1{
+    &__title{
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
