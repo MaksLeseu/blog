@@ -38,7 +38,7 @@ body{
     margin: 120px auto 60px auto;
     &._active-burger{
        opacity: 0.1;
-       overflow: none;
+       pointer-events: none;
     }
     @media(max-width:630px) {
         max-width: 630px;
@@ -294,6 +294,7 @@ body{
             }
         }
         &._active-burger{
+            position: fixed;
             left: 0px;
             transition: left 0.3s ease 0s; 
         }
@@ -403,6 +404,8 @@ body{
         }
     }
     @media(max-width:990px) {
+        position: sticky;
+        top: 0;
         &__burger{
             position: relative;
             top: 10px;

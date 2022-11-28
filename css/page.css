@@ -98,7 +98,7 @@ body._active-burger {
 }
 .container._active-burger {
   opacity: 0.1;
-  overflow: none;
+  pointer-events: none;
 }
 .container p {
   display: inline-block;
@@ -368,6 +368,7 @@ body._active-burger {
     color: #107EFF;
   }
   .sidebar._active-burger {
+    position: fixed;
     left: 0px;
     transition: left 0.3s ease 0s;
   }
@@ -477,6 +478,10 @@ body._active-burger {
   box-shadow: 1px 1px 5px #3137C9;
 }
 @media (max-width: 990px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
   .header__burger {
     position: relative;
     top: 10px;
